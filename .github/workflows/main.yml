@@ -23,7 +23,7 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: build
+    - name: download-dll
       run: |
         curl -o sample.dll https://github.com/carterjones/hello-world-dll/releases/download/v1.0.0/hello-world-x64.dll
 
@@ -34,7 +34,7 @@ jobs:
         name: "sample" 
         if-no-files-found: error
         path: |
-          .\sample.dll
+          ./sample.dll
 
     - name: sign
       uses: signpath/github-action-submit-signing-request@v1
