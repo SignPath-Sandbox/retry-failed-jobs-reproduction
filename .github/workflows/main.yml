@@ -16,6 +16,9 @@ jobs:
   build:
     needs: initial # makes sure the jobs run sequential
     runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
     steps:
 
     - name: checkout
