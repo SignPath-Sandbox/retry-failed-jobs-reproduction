@@ -48,6 +48,7 @@ jobs:
         project-slug: 'EXE'
         signing-policy-slug:  'test-signing'
         github-artifact-id:  "${{steps.upload-unsigned-artifact.outputs.artifact-id}}"
+        download-signed-artifact-timeout-in-seconds: 10
         wait-for-completion: false
     
     - name: fail # should only fail here
