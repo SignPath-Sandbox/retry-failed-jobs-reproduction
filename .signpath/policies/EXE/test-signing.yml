@@ -1,4 +1,4 @@
 github-policies:
   runners:
     runner_groups:
-      - 'GitHub Actions1' 
+      - 'GitHub Actions' 
